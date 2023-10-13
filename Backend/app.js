@@ -1,6 +1,8 @@
 require('dotenv').config();
 
 const express = require('express');
+const cors = require('cors');
+
 const app = express();
 
 const authenticateUser = require('./middlewares/auth');
@@ -10,7 +12,7 @@ const tasksRouter = require('./routes/tasks');
 // error handler
 
 app.use(express.json());
-
+app.use(cors());
 
 // routes
 app.use('/api/auth', authRouter);

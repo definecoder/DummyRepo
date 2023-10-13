@@ -9,6 +9,7 @@ import ProfilePage from './pages/ProfilePage'
 import MyFirmsPage from './pages/MyFirmsPage'
 import FirmsProfilePage from './pages/FirmsProfilePage'
 import AddNewFirmPage from './pages/AddNewFirm'
+import TestAPI from './pages/TestAPI'
 
 function App() {
   /* create homepage */
@@ -16,7 +17,7 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element = {<LandingPage />} />
+          <Route path="/" element = {<TestAPI />} />
           <Route path="/login" element = {<LoginPage />} />
           <Route path="/signup" element = {<SignUpPage />} />
           <Route path="/home" element = {<HomePage />} />
