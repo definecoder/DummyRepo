@@ -25,7 +25,7 @@ const getAllTasks = async (req, res) => {
         SELECT * FROM tasks
     `
     const result = await pool.query(sql)
-    const data = result[0][0]
+    const data = result[0]
     return res.json({ data })
 }
 
